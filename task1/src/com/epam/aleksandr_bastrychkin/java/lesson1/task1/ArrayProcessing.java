@@ -17,7 +17,7 @@ public class ArrayProcessing {
         }
     }
 
-    public static int oddSum(int[] array) {
+    public static int calculateOddSum(int[] array) {
         int sum = 0;
         if (array.length < 2 ) {
             System.out.print("No odd positions! ");

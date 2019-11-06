@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Task1\n ");
         int[] myArray = ArrayProcessing.generateArray(20, -10,10);
         ArrayProcessing.outputArray(myArray);
-        System.out.print("\nOdd positions sum: " + ArrayProcessing.oddSum(myArray));
+        System.out.print("\nOdd positions sum: " + ArrayProcessing.calculateOddSum(myArray));
 
         System.out.println("\n\nTask2");
         Scanner in = new Scanner(System.in);
