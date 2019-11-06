@@ -3,13 +3,13 @@ package com.epam.aleksandr_bastrychkin.java.lesson1.task3;
 import java.util.Scanner;
 
 public class Calculator {
-    private double a;
-    private double b;
+    private double firstOperand;
+    private double secondOperand;
 
 
     public void runCalculator() {
-        setA();
-        setB();
+        setFirstOperand();
+        setSecondOperand();
 
         String operation = new String();
         double answer;
@@ -40,30 +40,30 @@ public class Calculator {
     }
 
     private double add() {
-        return a + b;
+        return firstOperand + secondOperand;
     }
 
     private double substract() {
-        return a - b;
+        return firstOperand - secondOperand;
     }
 
     private double multiply() {
-        return a * b;
+        return firstOperand * secondOperand;
     }
 
     private double divide() {
-        return a / b;
+        return firstOperand / secondOperand;
     }
 
-    public void setA() {
+    public void setFirstOperand() {
         Scanner in = new Scanner(System.in);
         System.out.println("Input A: ");
-        this.a = in.nextDouble();
+        this.firstOperand = in.nextDouble();
     }
 
-    public void setB() {
+    public void setSecondOperand() {
         Scanner in = new Scanner(System.in);
         System.out.println("Input B: ");
-        this.b = in.nextDouble();
+        this.secondOperand = in.nextDouble();
     }
 }
