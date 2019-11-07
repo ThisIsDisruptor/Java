@@ -36,7 +36,7 @@ public class Calculator {
                 answer = 0;
                 break;
         }
-        System.out.println("Answer: " + answer);
+        System.out.printf("Answer: %.2f", answer);
     }
 
     private double add() {

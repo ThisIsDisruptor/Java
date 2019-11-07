@@ -8,12 +8,12 @@ public class StringHandler {
         System.out.println("Enter count of strings: ");
         int stringsCount = in.nextInt();
 
-        System.out.println("Enter " + stringsCount + " strings: ");
+        System.out.printf("Enter %d strings: \n", stringsCount);
         if (stringsCount > 0){
             String[] myStrings = StringProcessing.inputConsoleStrings(stringsCount);
 
             double averageLength = StringProcessing.calculateAverageStringLength(myStrings);
-            System.out.println("\nAverage length: " + averageLength);
+            System.out.printf("\nAverage length: %.2f", averageLength);
 
             System.out.println("\nStrings longer than average: ");
             StringProcessing.outputMoreThanAverageStrings(myStrings);
